@@ -64,6 +64,7 @@ All within a **console-based Java application** with a fun, intuitive interface.
 ---
 
 ## 📂 Project Structure
+```
 PennyPilot/
 │
 ├── src/
@@ -85,12 +86,17 @@ PennyPilot/
 ├── .gitignore
 ├── README.md
 └── pom.xml                 # Maven configuration
----
 
-## 💻 Code Examples
+---
+```
+
+## 🖼️ Images
+### Welcome interface
 ![Screenshot 2025-10-17 at 8.39.32 AM.png](Assets/Screenshot%202025-10-17%20at%208.39.32%E2%80%AFAM.png)
+### Main Menu
 ![Screenshot 2025-10-17 at 8.39.24 AM.png](Assets/Screenshot%202025-10-17%20at%208.39.24%E2%80%AFAM.png)
 
+### Outcomes
 ![Screenshot 2025-10-17 at 8.37.30 AM.png](Assets/Screenshot%202025-10-17%20at%208.37.30%E2%80%AFAM.png)
 ![Screenshot 2025-10-17 at 8.37.57 AM.png](Assets/Screenshot%202025-10-17%20at%208.37.57%E2%80%AFAM.png)
 ![Screenshot 2025-10-17 at 8.38.09 AM.png](Assets/Screenshot%202025-10-17%20at%208.38.09%E2%80%AFAM.png)
