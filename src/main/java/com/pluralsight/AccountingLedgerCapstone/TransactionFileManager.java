@@ -49,8 +49,10 @@ public class TransactionFileManager {
             FileWriter fileWriter = new FileWriter(fileName, true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-            System.out.printf("%s|%s|%s|%s|%.2f%n", transaction.getDate(), transaction.getTime(), transaction.getDescription(), transaction.getVendor(), transaction.getAmount());
-
+            String record = String.format("%s|%s|%s|%s|%.2f%n", transaction.getDate(), transaction.getTime(), transaction.getDescription(), transaction.getVendor(), transaction.getAmount());
+            bufferedWriter.write(record);
+            bufferedWriter.close();
+            transactions.add(transaction);
 
         } catch (IOException exception) {
             System.out.println("⚠\uFE0F Error while writing to transaction file: " + exception.getMessage());
