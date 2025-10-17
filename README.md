@@ -72,28 +72,28 @@ PennyPilot/
 │           └── com/
 │               └── pluralsight/
 │                   └── AccountingLedgerCapstone/
-│                       ├── PennyPilot.java
-│                       ├── LedgerScreen.java
-│                       ├── ReportScreen.java
-│                       ├── Transaction.java
-│                       ├── TransactionFileManager.java
-│                       └── AppScreens.java
+│                       ├── PennyPilot.java              # Main application entry point
+│                       ├── LedgerScreen.java            # Ledger display logic
+│                       ├── ReportScreen.java            # Report generation logic
+│                       ├── Transaction.java             # Transaction model
+│                       ├── TransactionFileManager.java  # CSV file operations
+│                       └── AppScreens.java              # Screen navigation utilities
 │
 ├── resources/
-│   └── transactions.csv
+│   └── transactions.csv    # Transaction data storage
 │
 ├── .gitignore
 ├── README.md
-└── pom.xml
-
+└── pom.xml                 # Maven configuration
 ---
 
 ## 💻 Code Examples
+![Screenshot 2025-10-17 at 8.39.32 AM.png](Assets/Screenshot%202025-10-17%20at%208.39.32%E2%80%AFAM.png)
+![Screenshot 2025-10-17 at 8.39.24 AM.png](Assets/Screenshot%202025-10-17%20at%208.39.24%E2%80%AFAM.png)
+
 ![Screenshot 2025-10-17 at 8.37.30 AM.png](Assets/Screenshot%202025-10-17%20at%208.37.30%E2%80%AFAM.png)
 ![Screenshot 2025-10-17 at 8.37.57 AM.png](Assets/Screenshot%202025-10-17%20at%208.37.57%E2%80%AFAM.png)
 ![Screenshot 2025-10-17 at 8.38.09 AM.png](Assets/Screenshot%202025-10-17%20at%208.38.09%E2%80%AFAM.png)
-![Screenshot 2025-10-17 at 8.39.24 AM.png](Assets/Screenshot%202025-10-17%20at%208.39.24%E2%80%AFAM.png)
-![Screenshot 2025-10-17 at 8.39.32 AM.png](Assets/Screenshot%202025-10-17%20at%208.39.32%E2%80%AFAM.png)
 ---
 
 ## ✍️ Author
