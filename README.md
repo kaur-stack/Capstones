@@ -98,7 +98,7 @@ PennyPilot/
 
 ### Outcomes
 💻 All Transactions Report
-This screen displays all recorded transactions in the account ledger, showing deposits and payments in chronological order (newest first). Each entry includes details such as the date, time, description, vendor, and transaction amount.
+This screen displays all recorded transactions in the account ledger, showing deposits and payments in chronological order (newest first). 
 ![Screenshot 2025-10-17 at 8.37.30 AM.png](Assets/Screenshot%202025-10-17%20at%208.37.30%E2%80%AFAM.png)
 
 💰 Deposit Menu
