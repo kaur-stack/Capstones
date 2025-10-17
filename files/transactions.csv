@@ -1,32 +1,16 @@
 date|time|description|vendor|amount
 2023-04-15|10:13:25|ergonomic keyboard|Amazon|-89.50
 2023-04-15|11:15:00|Invoice 1001 paid|Joe|1500.00
-
-2025-10-17|05:18:04.557231|buying headphones|amazon|50.00
-2025-10-17|05:18:44.769722|paying for headphones|amazon|-40.00
-2025-10-17|05:25:11.074641|paid on wisely|wisely|50.00
-2025-10-17|05:25:41.957213|Cup|amazon|3.00
-2025-10-17|05:26:29.550324|Bought laptop |mac|-1400.00
-2025-10-17|06:27:49.633828|invoice|Wisely|50.00
-
-2025-10-17|06:28:11.322410|invoice YUU|YUU|500.00
-2025-10-17|06:29:16.414367|invoice |wisely|-300.00
-2025-10-17|06:55:16.403163|savings|BOA|600.00
-2025-10-17|07:23:18.243830|app|me|50.00
-2025-10-17|07:23:27.839360|you|i |40.00
-2025-10-17|07:23:38.681114|wisely|mortgage|-500.00
-
-2025-10-17|07:29:13.643894|me|you|20.00
-
-2025-10-17|08:31:28.127533|Books|Amazon|3.00
-
+2024-10-15|05:18:04.557231|buying headphones|amazon|50.00
+2024-10-15|05:18:44.769722|paying for headphones|amazon|-40.00
+2024-10-15|05:26:29.550324|Bought laptop |mac|-1400.00
+2025-10-16|07:23:38.681114|wisely|mortgage|-500.00
 2025-10-17|08:31:59.134728|Sold Computer Screen|Amazon|250.00
-
 2025-10-17|08:32:38.890065|Membership|Planet Fitness |35.00
-
 2025-10-17|08:34:43.198617|Bought CellPhone|iphone|-999.00
-
 2025-10-17|08:35:36.805570|Bought Coffee|MugCafe|-5.69
-
 2025-10-17|08:36:24.355718|Stipend|YUU|250.00
 
+2025-10-17|11:51:45|iphone|apple|900.00
+2025-10-17|11:52:08|coffee|MugCafe|-3.00
+2025-10-17|12:30:16|saving|BOA|100.00

@@ -13,7 +13,7 @@ public class AppScreens {
         System.out.println("|                                |");
         System.out.println("|          WELCOME USER          |");
         System.out.println("|                                |");
-        System.out.println("|           hit enter!           |");
+        System.out.println("|             say hi!            |");
         System.out.println("|--------------------------------|");
     }
 
