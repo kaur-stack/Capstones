@@ -5,9 +5,16 @@ import java.util.Scanner;
 
 import static com.pluralsight.AccountingLedgerCapstone.TransactionFileManager.transactions;
 
+/**
+ * The ReportScreen class provides reporting features for the accounting ledger.
+ * It allows users to view transactions filtered by specific time periods or by vendor.
+ */
 public class ReportScreen {
     static Scanner console = new Scanner(System.in);
 
+    /**
+     * Displays the report menu and handles user input for report generation.
+     */
     public static void displayReportsMenu() {
         boolean goBack = false;
 
@@ -44,6 +51,9 @@ public class ReportScreen {
         }
     }
 
+    /**
+     * Displays transactions from the current month to date.
+     */
     public static void reportMonthToDate() {
         System.out.println("\n---- MONTH TO DATE ----");
         LocalDate now = LocalDate.now();
@@ -56,6 +66,9 @@ public class ReportScreen {
         printLedgerFooter();
     }
 
+    /**
+     * Displays transactions from the previous month.
+     */
     public static void reportPreviousMonth() {
         System.out.println("\n---- PREVIOUS MONTH ----");
         LocalDate now = LocalDate.now();
@@ -69,6 +82,9 @@ public class ReportScreen {
         printLedgerFooter();
     }
 
+    /**
+     * Displays transactions from the current year to date.
+     */
     public static void reportYearToDate() {
         System.out.println("\n---- YEAR TO DATE ----");
         LocalDate now = LocalDate.now();
@@ -81,6 +97,9 @@ public class ReportScreen {
         printLedgerFooter();
     }
 
+    /**
+     * Displays transactions from the previous calendar year.
+     */
     public static void reportPreviousYear() {
         System.out.println("\n---- PREVIOUS YEAR ----");
         LocalDate now = LocalDate.now();
@@ -94,6 +113,10 @@ public class ReportScreen {
         printLedgerFooter();
     }
 
+    /**
+     * Displays all transactions associated with a given vendor.
+     * Prompts the user for a vendor name.
+     */
     public static void reportByVendor() {
         System.out.println("\n---- SEARCH BY VENDOR ----");
         System.out.print("Enter vendor name: ");
@@ -108,6 +131,7 @@ public class ReportScreen {
         }
         printLedgerFooter();
     }
+
 
     private static void printLedgerHeader() {
         System.out.println("---------------------------------------------------------------------------------------------------------------------");

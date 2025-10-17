@@ -1,13 +1,33 @@
+/**
+ * Author: Supreet Kaur
+ * Course: LTCA
+ * Capstone 1: Accounting Ledger
+*/
+
 package com.pluralsight.AccountingLedgerCapstone;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Scanner;
 
+/**
+ * Main class for the Penny Pilot Accounting Ledger application.
+
+ * This class serves as the entry point for the program. It displays
+ * the welcome screen and main menu, handles user input, and directs
+ * users to add deposits, make payments, or view ledger reports.
+
+ * It coordinates with other classes such as LedgerScreen,
+ * ReportScreen, and TransactionFileManager to manage and display financial transaction data.
+ */
+
 public class PennyPilot {
     static Scanner console = new Scanner(System.in);
     static String fileName = "files/transactions.csv";
 
+    /**
+     * Program entry point. Displays the welcome screen and then navigates to the home menu.
+     */
     public static void main(String[] args) {
         // loading the stored data from transactions file.
         TransactionFileManager.loadTransaction(fileName);
@@ -21,6 +41,11 @@ public class PennyPilot {
 
         homeScreen();
     }
+
+    /**
+     * Displays the main home screen and handles user input for primary actions.
+     * Loops until the user chooses to exit.
+     */
     public static void homeScreen() {
         boolean endProgram = false;
 
@@ -52,6 +77,9 @@ public class PennyPilot {
         }
     }
 
+    /**
+     * Collects user input and records a new deposit transaction.
+     */
     public static void addDeposit() {
         System.out.println("\n--- ADD A DEPOSIT ---");
         // current date
@@ -74,6 +102,9 @@ public class PennyPilot {
         System.out.println("✅ Deposit saved successfully!");
     }
 
+    /**
+     * Collects user input and records a new payment (negative transaction).
+     */
     public static void makePayment() {
         System.out.println("\n--- MAKE A PAYMENT ---");
 

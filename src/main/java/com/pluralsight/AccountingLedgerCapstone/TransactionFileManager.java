@@ -7,11 +7,20 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Handles reading and writing transaction data from and to a CSV file.
+ * Provides methods for persisting new transactions and loading existing ones into memory.
+ */
 public class TransactionFileManager {
     public static List<Transaction> transactions = new ArrayList<>();
     static DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     static DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 
+    /**
+     * Loads transactions from a CSV file into memory.
+     * Each record is expected to have the format:
+     * <pre>date|time|description|vendor|amount</pre>
+     */
     public static void loadTransaction(String fileName) {
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
@@ -44,6 +53,10 @@ public class TransactionFileManager {
         }
     }
 
+    /**
+     * Stores a new transaction to the CSV file and updates the in-memory list.
+     * Automatically adds a file header if the file is empty.
+    */
     public static void storeTransaction(Transaction transaction, String fileName) {
         if (transaction == null || fileName.isEmpty()) {
             System.out.println("⚠\uFE0F Invalid transaction or filename.");
@@ -59,7 +72,6 @@ public class TransactionFileManager {
                     transaction.getAmount());
 
             bufferedWriter.write(record);
-            bufferedWriter.newLine();
             bufferedWriter.close();
 
             transactions.add(transaction);

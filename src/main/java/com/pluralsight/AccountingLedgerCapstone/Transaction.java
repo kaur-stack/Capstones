@@ -3,6 +3,11 @@ package com.pluralsight.AccountingLedgerCapstone;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+/**
+ * Represents a single financial transaction.
+ * Each transaction includes a date, time, description, vendor, and amount.
+ */
+
 public class Transaction {
     // date|time|description|vendor|amount
     private LocalDate date;
@@ -19,6 +24,7 @@ public class Transaction {
         this.amount = amount;
     }
 
+    // Getters and setters
     public LocalDate getDate() {
         return date;
     }

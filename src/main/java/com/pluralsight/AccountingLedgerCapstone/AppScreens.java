@@ -1,6 +1,11 @@
 package com.pluralsight.AccountingLedgerCapstone;
 
+/**
+ * The AppScreens class contains reusable UI components
+ * that display various menus and visual sections for the PennyPilot console app.
+ */
 public class AppScreens {
+    /** Displays the welcome screen. */
     public static void displayWelcomeScreen() {
         displayPhoneTop();
         System.out.println("|--------------------------------|");
@@ -11,20 +16,23 @@ public class AppScreens {
         System.out.println("|           hit enter!           |");
         System.out.println("|--------------------------------|");
     }
+
+    /** Displays the top of the phone. */
     public static void displayPhoneTop() {
         System.out.println("   ____________________________");
         System.out.println(" /  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  \\");
-        System.out.println("|  |      ●     ▂▂▂▂▂         |  |");
+        System.out.println("|  |          ▂▂▂▂▂   ●       |  |");
         System.out.println("|  |__________________________|  |");
     }
 
+    /** Displays the bottom of the phone. */
     public static void displayPhoneBottom() {
         System.out.println("|                                |");
         System.out.println("|              ⬤                |");
         System.out.println(" \\______________________________/");
-        System.out.println();
     }
 
+    /** Displays the main home menu. */
     public static void displayMainMenuScreen() {
         displayPhoneTop();
         System.out.println("|          📱 MAIN MENU          |");
@@ -38,6 +46,7 @@ public class AppScreens {
         System.out.println("|  Please enter your choice:     |");
     }
 
+    /** Displays the ledger submenu options. */
     public static void displayLedgerMenuScreen() {
         displayPhoneTop();
         System.out.println("|          📒 LEDGER MENU        |");
@@ -51,6 +60,7 @@ public class AppScreens {
         System.out.println("|  Please enter your choice:     |");
     }
 
+    /** Displays the reports menu options. */
     public static void displayReportsMenuScreen() {
         displayPhoneTop();
         System.out.println("|         📊 REPORTS MENU        |");
@@ -65,6 +75,7 @@ public class AppScreens {
         System.out.println("|  Please enter your choice:     |");
     }
 
+    /** Displays a goodbye. */
     public static void displayExitScreen() {
         displayPhoneTop();
         System.out.println("|--------------------------------|");
