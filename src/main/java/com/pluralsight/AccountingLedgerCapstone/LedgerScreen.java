@@ -14,6 +14,7 @@ public class LedgerScreen {
             System.out.print("|");
             String useInput = console.next().trim().toUpperCase();
             console.nextLine();
+            AppScreens.displayPhoneBottom();
 
             switch (useInput) {
                 case "A":
@@ -76,18 +77,18 @@ public class LedgerScreen {
     }
 
     private static void printLedgerHeader() {
-        System.out.println("--------------------------------------------------------------------------------------------");
-        System.out.printf("%-10s | %-8s | %-30s | %-20s | %-10s\n",
+        System.out.println("---------------------------------------------------------------------------------------------------------------------");
+        System.out.printf("%-12s | %-15s | %-40s | %-30s | %-10s\n",
                 "Date", "Time", "Description", "Vendor", "Amount");
-        System.out.println("--------------------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------------------------------------");
     }
 
     private static void printTransaction(Transaction t) {
-        System.out.printf("%-10s | %-8s | %-30s | %-20s | %10.2f\n",
+        System.out.printf("%-12s | %-15s | %-40s | %-30s | %-10.2f\n",
                 t.getDate(), t.getTime(), t.getDescription(), t.getVendor(), t.getAmount());
     }
 
     private static void printLedgerFooter() {
-        System.out.println("--------------------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------------------------------------");
     }
 }

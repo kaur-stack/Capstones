@@ -8,7 +8,7 @@ public class AppScreens {
         System.out.println("|                                |");
         System.out.println("|          WELCOME USER          |");
         System.out.println("|                                |");
-        System.out.println("|             say hi!            |");
+        System.out.println("|           hit enter!           |");
         System.out.println("|--------------------------------|");
     }
     public static void displayPhoneTop() {
@@ -63,5 +63,17 @@ public class AppScreens {
         System.out.println("|  0) Back (to Ledger page)      |");
         System.out.println("|--------------------------------|");
         System.out.println("|  Please enter your choice:     |");
+    }
+
+    public static void displayExitScreen() {
+        displayPhoneTop();
+        System.out.println("|--------------------------------|");
+        System.out.println("|                                |");
+        System.out.println("|                                |");
+        System.out.println("|          EXIT PROGRAM          |");
+        System.out.println("|          GOODBYE\uD83D\uDC4B!            |");
+        System.out.println("|                                |");
+        System.out.println("|--------------------------------|");
+        displayPhoneBottom();
     }
 }

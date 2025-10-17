@@ -3,15 +3,15 @@ package com.pluralsight.AccountingLedgerCapstone;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class Transactions {
+public class Transaction {
     // date|time|description|vendor|amount
     private LocalDate date;
     private LocalTime time;
     private String description;
     private String vendor;
-    private String amount;
+    private double amount;
 
-    public Transactions(LocalDate date, LocalTime time, String description, String vendor, String amount) {
+    public Transaction(LocalDate date, LocalTime time, String description, String vendor, double amount) {
         this.date = date;
         this.time = time;
         this.description = description;
@@ -51,11 +51,11 @@ public class Transactions {
         this.vendor = vendor;
     }
 
-    public String getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 

@@ -9,6 +9,10 @@ public class PennyPilot {
     static String fileName = "files/transactions.csv";
 
     public static void main(String[] args) {
+        // loading the stored data from transactions file.
+        TransactionFileManager.loadTransaction(fileName);
+
+        // welcome message
         AppScreens.displayWelcomeScreen();
         System.out.print("|");
         console.next(); // saying hi to go to homeMenu
@@ -16,7 +20,6 @@ public class PennyPilot {
         AppScreens.displayPhoneBottom();
 
         homeScreen();
-
     }
     public static void homeScreen() {
         boolean endProgram = false;

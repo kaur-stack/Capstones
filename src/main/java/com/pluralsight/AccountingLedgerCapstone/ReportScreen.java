@@ -16,6 +16,7 @@ public class ReportScreen {
             System.out.print("|");
             String useInput = console.next().trim().toUpperCase();
             console.nextLine();
+            AppScreens.displayPhoneBottom();
 
             switch (useInput) {
                 case "1":
@@ -109,10 +110,10 @@ public class ReportScreen {
     }
 
     private static void printLedgerHeader() {
-        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------------------------------------");
         System.out.printf("%-12s | %-15s | %-40s | %-30s | %-10s\n",
                 "Date", "Time", "Description", "Vendor", "Amount");
-        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------------------------------------");
     }
 
     private static void printTransaction(Transaction t) {
@@ -121,6 +122,6 @@ public class ReportScreen {
     }
 
     private static void printLedgerFooter() {
-        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------------------------------------");
     }
 }
