@@ -97,8 +97,18 @@ PennyPilot/
 ![Screenshot 2025-10-17 at 8.39.24 AM.png](Assets/Screenshot%202025-10-17%20at%208.39.24%E2%80%AFAM.png)
 
 ### Outcomes
+💻 All Transactions Report
+This screen displays all recorded transactions in the account ledger, showing deposits and payments in chronological order (newest first). Each entry includes details such as the date, time, description, vendor, and transaction amount.
 ![Screenshot 2025-10-17 at 8.37.30 AM.png](Assets/Screenshot%202025-10-17%20at%208.37.30%E2%80%AFAM.png)
+
+💰 Deposit Menu
+This screen allows the user to add a new deposit (credit) to the account ledger.
+Users enter details such as the date, time, description, vendor/source, and deposit amount.
 ![Screenshot 2025-10-17 at 8.37.57 AM.png](Assets/Screenshot%202025-10-17%20at%208.37.57%E2%80%AFAM.png)
+
+💳 Payments View
+This screen displays the payment transactions recorded in the system, including date, time, description, vendor, and amount.
+It lists all outgoing payments (debits) made by the user.
 ![Screenshot 2025-10-17 at 8.38.09 AM.png](Assets/Screenshot%202025-10-17%20at%208.38.09%E2%80%AFAM.png)
 ---
 
@@ -112,7 +122,6 @@ PennyPilot/
 ---
 
 ## 📚 References
-
 Van Puttanesca, M. (2025, October). Java In-Class [Workshop review]. LTCA Year Up United.  
 
 OpenAI. (2025). ChatGPT (GPT-5) [Large language model](https://chatgpt.com).
